@@ -50,9 +50,15 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 0.1rem;
+    gap: 0px;
     
   }
+  @media (max-width: 768px) {
+  .nav li a {
+    padding: 10px 12px; /* Reduce top/bottom and left/right padding */
+    margin-left: 5px;  /* Reduce space between links */
+  }
+}
   
   nav ul li a {
     color: white;
