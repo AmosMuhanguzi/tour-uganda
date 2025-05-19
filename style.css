@@ -7,7 +7,7 @@ body {
   }
   
   header {
-    background-image: url(images/Ugandan_Kob_Image03.jpg);
+    background-image: url(images/Lake_mutanda_view_03.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,14 +43,15 @@ body {
     }
     to { opacity: 1;}
   }
-    */
+  */
   nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 0.3rem;
+    gap: 0.1rem;
+    
   }
   
   nav ul li a {
@@ -58,6 +59,7 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
+    gap: 0.3rem;
   }
   
   nav ul li a:hover {
