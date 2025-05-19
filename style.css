@@ -54,13 +54,14 @@ body {
     gap: 0px;
     
   }
+  /*
   @media (max-width: 768px) {
   .nav li a {
-    padding: 10px 12px; /* Reduce top/bottom and left/right padding */
-    margin-left: 5px;  /* Reduce space between links */
+    padding: 10px 12px; 
+    margin-left: 5px;  
   }
 }
-  
+*/
   nav ul li a {
     color: white;
     text-decoration: none;
@@ -70,13 +71,12 @@ body {
     margin-left: 0px ;
     margin-right: 0px;
   }
-  /*
+  
   nav ul li a:hover {
     background-color: #34495e;
     border-radius: 5px;
-    border-style: double;
+
   }
-  */
   main {
     padding: 2rem;
 
