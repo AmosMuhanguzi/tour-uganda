@@ -2,8 +2,9 @@ body,html{
     margin: 0;
     padding: 0;
 }
+/*
 header {
-    background-image: url(images/Lake_mutanda_view_03.jpg);
+    /*background-image: url(images/Lake_mutanda_view_03.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +30,7 @@ nav ul {
     margin-left: 5px;  
   }
 }
-*/
+
   nav ul li a {
     color: white;
     text-decoration: none;
@@ -43,16 +44,89 @@ nav ul {
   nav ul li a:hover {
     background-color: #34495e;
     border-radius: 5px;
-  }
+  }*/
+  .container {
+  width: 100%;
+  max-width: 120%;
+  margin: auto;
+
+  } 
+  /* Header */
+header {
+  
+  color: #fff;
+  font-size: medium;
+  
+}
+.logo {
+  font-size: 20px;
+  font-weight: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+  width: 35px;
+  height: 30px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: white 3px solid;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  float: center; 
+  background-color: goldenrod;
+  padding: 1rem 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-left: 4px;
+  
+  
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: medium;
+  align-items: center;
+
+}
+
+
 .more-info{
     display: none;
 }
 #banner{
-    background-image: url('https://www.google.com/imgres?q=LAKES%20IN%20western%20uganda&imgurl=https%3A%2F%2Fwww.safaris-uganda.com%2Fwp-content%2Fuploads%2F2022%2F05%2FCrater-Lake-Tour-750x450-1.jpg&imgrefurl=https%3A%2F%2Fwww.safaris-uganda.com%2Fcrater-lakes-in-uganda%2F&docid=o9jJOh8azYK5eM&tbnid=13Ottd_eMiOWOM&vet=12ahUKEwjhx_iMnvOMAxXTUqQEHR4RDWUQM3oECGYQAA..i&w=750&h=450&hcb=2&ved=2ahUKEwjhx_iMnvOMAxXTUqQEHR4RDWUQM3oECGYQAA');
+    background-image: url('images/Ugandan_Kob_Image03.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 5rem 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
 
+}
+.hero-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
 }
 .inner{
     display: flex;
@@ -103,3 +177,43 @@ nav ul {
     background-color: #34495e;
     border-radius: 5px;
 }
+footer{
+  background-color: goldenrod;
+  text-align: center;
+  padding: 3rem;
+  position:flex;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+footer ul {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  footer ul li a {
+    color: brown;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    transition: background-color 0.3s ease;
+    gap: 0.3rem;
+    margin-left: 0px ;
+    margin-right: 0px;
+
+  }
+  
+  footer ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+  }

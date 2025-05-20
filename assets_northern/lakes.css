@@ -1,0 +1,105 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url(images/Lake_mutanda_view_03.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    
+  }
+  /*
+  @media (max-width: 768px) {
+  .nav li a {
+    padding: 10px 12px; 
+    margin-left: 5px;  
+  }
+}
+*/
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    transition: background-color 0.3s ease;
+    gap: 0.3rem;
+    margin-left: 0px ;
+    margin-right: 0px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+  }
+.more-info{
+    display: none;
+}
+#banner{
+    background-image: url('https://www.google.com/imgres?q=LAKES%20IN%20western%20uganda&imgurl=https%3A%2F%2Fwww.safaris-uganda.com%2Fwp-content%2Fuploads%2F2022%2F05%2FCrater-Lake-Tour-750x450-1.jpg&imgrefurl=https%3A%2F%2Fwww.safaris-uganda.com%2Fcrater-lakes-in-uganda%2F&docid=o9jJOh8azYK5eM&tbnid=13Ottd_eMiOWOM&vet=12ahUKEwjhx_iMnvOMAxXTUqQEHR4RDWUQM3oECGYQAA..i&w=750&h=450&hcb=2&ved=2ahUKEwjhx_iMnvOMAxXTUqQEHR4RDWUQM3oECGYQAA');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.inner-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,3,10,0.1);
+    text-align: center;
+}
+.inner img{
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    
+}
+.inner-more img{
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    margin-top: 30px;
+}
+#toggleBtn{
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    font-size: 16px;
+}
+#toggleBtn:hover{
+    background-color: #34495e;
+    border-radius: 5px;
+}
