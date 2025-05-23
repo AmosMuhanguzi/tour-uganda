@@ -2,13 +2,13 @@ body,html{
     margin: 0;
     padding: 0;
 }
-
+/* Global Styles 
   .container {
   width: 100%;
   max-width: 120%;
   margin: auto;
 
-  } 
+  } */
   /* Header */
 header {
   
@@ -17,48 +17,82 @@ header {
   
 }
 .logo {
-  font-size: 20px;
   font-weight: 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-align: left;
   width: 35px;
   height: 30px;
   padding: 0.5rem;
   border-radius: 50%;
   border: white 3px solid;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  text-align: center;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  float: center; 
   background-color: goldenrod;
-  padding: 1rem 0;
+  padding: 2rem;
+  padding-right: 2rem;
   overflow: hidden;
   width: 100%;
 }
-
+/*
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
   font-size: 1.2rem;
   margin-left: 4px;
-  
-  
+}*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center ;
+  }
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
+ /* Responsive behavior */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color:goldenrod;
+      width: 100%;
+      text-align: right;
+      padding: 10px 20px;
+    }
 
+    .nav-links.show {
+      display: flex;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+/* Navigation Links 
 .nav-links li a {
   color: #fff;
   text-decoration: none;
   font-weight: medium;
   align-items: center;
 
-}
+}*/
 
 
 .more-info{
@@ -161,13 +195,17 @@ footer{
   position:flex;
   bottom: 0;
   width: 100%;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
   font-size: 10px;
   font-family: 'Times New Roman', Times, serif;
   
+  
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 10px;
+    text-align: left;
 }
 footer ul {
     list-style: none;
