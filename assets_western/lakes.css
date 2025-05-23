@@ -75,16 +75,26 @@ nav {
       width: 100%;
       text-align: right;
       padding: 10px 20px;
+      z-index: 1000; /* Ensures it's above other content */
     }
 
     .nav-links.show {
       display: flex;
     }
-
+    .nav-links li {
+    padding: 0.5rem 0; /* Add spacing between links */
+    }
     .hamburger {
       display: block;
+      cursor: pointer;
+      z-index: 1001;
     }
   }
+  .nav-links {
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
 /* Navigation Links 
 .nav-links li a {
   color: #fff;
