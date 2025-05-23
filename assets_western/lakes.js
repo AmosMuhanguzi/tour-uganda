@@ -42,6 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
 //   }
 // }
 function toggleMenu() {
-    const nav = document.getElementById('navLinks');
+    const nav = document.getElementById('nav-links');
     nav.classList.toggle('show');
   }
