@@ -1,6 +1,7 @@
 body,html{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 /* Global Styles 
   .container {
@@ -89,21 +90,18 @@ nav {
       cursor: pointer;
       z-index: 1001;
     }
+    /*Navigation Links */
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: medium;
+      align-items: center;
+    }
   }
   .nav-links {
-  background-color: lightgray;
-  border: 1px solid black;
-}
-
-/* Navigation Links 
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: medium;
-  align-items: center;
-
-}*/
-
+  width: 100%;
+  box-sizing: border-box; /* ensures padding doesn't add extra width */
+  }
 
 .more-info{
     display: none;
@@ -198,7 +196,7 @@ form{
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,3,10,0.1);
 }
-/* Footer */
+/* Footer 
 footer{
   background-color: goldenrod;
   padding: 3rem;
@@ -242,3 +240,67 @@ footer ul {
     background-color: #34495e;
     border-radius: 5px;
   }
+*/
+/* Footer */
+footer {
+  background-color: goldenrod;
+  padding: 3rem 1rem;
+  width: 100%;
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+/* Footer table layout */
+footer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 10px;
+  text-align: left;
+}
+
+/* Make table cells stack on small screens */
+@media (max-width: 768px) {
+  footer table, footer table tr, footer table td {
+    display: block;
+    width: 100%;
+  }
+  footer table td {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Contact + Links Lists */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Contact list */
+footer .contact li {
+  margin-bottom: 0.5rem;
+}
+
+/* Quick links list layout */
+footer ul li a {
+  color: blue;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+footer ul li a:hover {
+  background-color: #34495e;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Copyright */
+footer .copyright {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.9em;
+}
