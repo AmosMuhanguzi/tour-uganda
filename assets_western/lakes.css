@@ -223,7 +223,7 @@ form .actions:hover {
 .newsletter-section {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/043_Elephant_family_at_Queen_Elizabeth_National_Park_Photo_by_Giles_Laurent.jpg') no-repeat center center / cover; /* Replace 'uganda-landscape.jpg' with an actual image of Uganda */
     color: #fff;
-    padding: 80px 20px; /* Adjust padding as needed */
+    padding: 80px 20px; 
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     margin-bottom: 40px; /* Space below the section */
@@ -336,51 +336,6 @@ form .actions:hover {
     }
 }
 
-/* Footer 
-footer{
-  background-color: goldenrod;
-  padding: 3rem;
-  position:flex;
-  bottom: 0;
-  width: 100%;
-  font-size: 10px;
-  font-family: 'Times New Roman', Times, serif;
-  
-  
-}
-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin: 5px 0;
-    font-size: 10px;
-    text-align: left;
-}
-footer ul {
-    list-style: none;
-    padding: 5px;
-    margin: 0;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  footer ul li a {
-    color: blue;
-    text-decoration: none;
-    padding: 0.5rem 0.5rem;
-    transition: background-color 0.3s ease;
-    gap: 0.3rem;
-    margin-left: 0px ;
-    margin-right: 0px;
-
-  }
-  
-  footer ul li a:hover {
-    background-color: #34495e;
-    border-radius: 5px;
-  }
-*/
 /* Footer */
 footer {
   background-color: goldenrod;
