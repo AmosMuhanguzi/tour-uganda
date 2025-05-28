@@ -59,11 +59,7 @@ nav {
     gap: 10px;
     justify-content: center ;
   }
-.hamburger {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-}
+  
  /* Responsive behavior */
   @media (max-width: 768px) {
     .nav-links {
@@ -72,7 +68,6 @@ nav {
       position: absolute;
       top: 60px;
       right: 0;
-      background-color:goldenrod;
       width: 100%;
       text-align: right;
       padding: 10px 20px;
