@@ -166,6 +166,12 @@ nav {
     margin-top: 30px;
 
 }
+.features p{
+    font-size: 24px;
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}
 #toggleBtn{
     background-color: brown;
     color: white;
@@ -211,6 +217,12 @@ form .actions {
 form .actions:hover {
     background-color: #34495e;
     border-radius: 6px;
+}
+form p {
+    font-size: 14px;
+    color:black;
+    margin-top: 10px;
+    text-align: center;
 }
 
 
