@@ -3,6 +3,11 @@ body,html{
     padding: 0;
     overflow-x: hidden;
 }
+h5,h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: brown;
+}
 /* Global Styles 
   .container {
   width: 100%;
@@ -133,7 +138,7 @@ nav {
     margin: 20px;
     background-color: whitesmoke;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,2);
 }
 .inner-more{
     display: flex;
@@ -142,9 +147,9 @@ nav {
     flex-direction: column;
     padding: 20px;
     margin: 20px;
-    background-color: whitesmoke;
+    background-color: snow;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,3,10,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,2);
     text-align: center;
 }
 .inner img{
@@ -167,8 +172,8 @@ nav {
 
 }
 .features p{
-    font-size: 24px;
-    color: green;
+    font-size: 22px;
+    color: black;
     margin-top: 10px;
     text-align: center;
 }
@@ -186,6 +191,7 @@ nav {
     background-color: #34495e;
     border-radius: 5px;
 }
+/*
 form{
     display: flex;
     justify-content: center;
@@ -195,7 +201,7 @@ form{
     margin: 20px;
     background-color: whitesmoke;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,3,10,0.1);
+    box-shadow: 0 2px 4px rgba(0,3,0,2);
 }
 form input, form textarea {
     width: 100%;
@@ -224,7 +230,178 @@ form p {
     margin-top: 10px;
     text-align: center;
 }
+*/
+/* General Body and Container Styles (if not already present from previous sections) */
 
+.form-section {
+    padding: 10px 20px;
+    background-color: #f0f4f7;
+    text-align: center;
+}
+form {
+    max-width: 80%;
+    max-height: 70%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for a modern look */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 2);
+    text-align: left; /* Default for content inside container */
+    float:left;
+}
+
+/* --- Form Specific Styles --- */
+
+/* Heading and Paragraph */
+.major { /* Targets the h2 with class 'major' directly */
+    font-family: 'Playfair Display', serif; /* Ensure this Google Font is linked in HTML */
+    font-size: 2.5em;
+    color: #0056b3;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Targets the paragraph directly after the h2 within the form */
+form p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Flexbox for the fields container */
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+
+/* Individual field styling */
+.field {
+    flex: 1 1 48%; /* Allows two fields per row on larger screens */
+    min-width: 280px; /* Minimum width before wrapping */
+}
+
+/* Labels */
+.field label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+/* Input Fields and Textarea - Consolidated Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 30px); /* 100% minus padding for box-sizing consistency */
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus states for inputs and textarea */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Textarea specific */
+textarea {
+    resize: vertical;
+    min-height: 100px; /* Minimum height for better usability */
+}
+
+/* Actions List and Submit Button */
+.actions {
+    list-style: none;
+    padding: 0;
+    margin: 3px 0 0;
+    text-align: center;
+}
+
+.actions li {
+    display: inline-block;
+}
+
+.actions input[type="submit"] {
+    background-color: #4CAF50; /* Vibrant green */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.actions input[type="submit"]:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 30px;
+    }
+
+    .major {
+        font-size: 2em;
+    }
+
+    .fields {
+        flex-direction: column; /* Stack fields vertically */
+    }
+
+    .field {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        min-width: unset;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .form-section {
+        padding: 40px 15px;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+
+    .major {
+        font-size: 1.8em;
+    }
+
+    form p {
+        font-size: 1em;
+    }
+
+    .actions input[type="submit"] {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
 
 /* Newsletter Section Styling */
 .newsletter-section {
@@ -234,10 +411,11 @@ form p {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     margin-bottom: 40px; /* Space below the section */
+    float:right;
 }
 
 .newsletter-content {
-    max-width: 700px;
+    max-width: 80%;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white overlay for text */
     padding: 30px;
@@ -275,6 +453,7 @@ form p {
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for input */
     font-size: 1em;
     outline: none; /* Remove blue outline on focus */
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -341,6 +520,10 @@ form p {
     .newsletter-content p {
         font-size: 1em;
     }
+}
+.half-page{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 /* Footer */
